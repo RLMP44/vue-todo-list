@@ -1,0 +1,8 @@
+/* Your customized CSS goes here */
+[v-cloak] {
+  display: none;
+}
+
+.shadow-sm h1 {
+  font-size: 1.5rem;
+}
