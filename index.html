@@ -21,18 +21,18 @@
   </head>
   <body class="bg-light">
     <div class="row justify-content-center mt-4">
-      <div class="col-lg-4 rounded shadow-sm p-5">
-      <h1 class="mb-3">🗒 To-do</h1>
+      <div class="main-container col-lg-4 rounded shadow-sm p-5">
+      <h1 class="mb-3" style="text-align: center;">Grocery List</h1>
         <div id="todosContainer" v-cloak>
           <div class='v-for-start' v-for="(todo, index) in todos">
-            <div class="shadow-sm rounded px-4 py-3 mb-2 border d-flex justify-content-between align-items-center">
+            <div class="item-card shadow-sm rounded border p-2 m-2 d-flex justify-content-between align-items-center">
               <input class="d-flex form-check-input me-1" type="checkbox" v-bind:checked="todo.done">
-              <h1>{{todo.title}}</h1>
+              <p>{{todo.title}}</p>
               <button v-on:click="deleteTodo(index)" class="deleteButton"><i class="fa-solid fa-trash mx-5"></i></button>
             </div>
           </div>
           <div class="user-input">
-            <input v-model="newTodo" placeholder="Add a new To-do" />
+            <input v-model="newTodo" placeholder="Add a new item" />
             <button v-on:click="addTodo" class='btn'>Add</button>
           </div>
         </div>
