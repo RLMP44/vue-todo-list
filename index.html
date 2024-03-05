@@ -21,7 +21,7 @@
   </head>
   <body class="bg-light">
     <div class="row justify-content-center mt-4">
-      <div class="col-lg-4 bg-white rounded shadow-sm p-5">
+      <div class="col-lg-4 rounded shadow-sm p-5">
       <h1 class="mb-3">🗒 To-do</h1>
         <div id="todosContainer" v-cloak>
           <div class='v-for-start' v-for="(todo, index) in todos">
@@ -33,7 +33,7 @@
           </div>
           <div class="user-input">
             <input v-model="newTodo" placeholder="Add a new To-do" />
-            <button v-on:click="addTodo" class='btn btn-primary'>Add</button>
+            <button v-on:click="addTodo" class='btn'>Add</button>
           </div>
         </div>
       </div>

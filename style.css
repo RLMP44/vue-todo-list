@@ -14,3 +14,21 @@ body {
   background-position-y: bottom;
   height: 100vh;
 }
+
+.user-input {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn, .deleteButton {
+  background-color: rgb(159,185,182);
+}
+
+.form-check-input:checked {
+  background-color: rgb(159,185,182);
+  border-color: rgb(159,185,182);
+}
+
+/* h1 {
+  color: rgb(159,185,182);
+} */
